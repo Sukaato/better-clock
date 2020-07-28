@@ -1,5 +1,12 @@
 tellraw @a ["",{"text":"[ ","color":"dark_gray"},{"text":"Initialisation","color":"gold"},{"text":" ] ","color":"dark_gray"},{"text":"Clock"}]
 
+bossbar remove clock
+
+bossbar add clock ["", {"text": ""}]
+bossbar set clock max 23999
+bossbar set clock value 0
+bossbar set clock visible true
+
 scoreboard objectives remove clock.off
 scoreboard objectives remove clock.on
 scoreboard objectives remove clock.const
@@ -21,12 +28,4 @@ scoreboard players set minutes.mod clock.const 60
 scoreboard players set display.bar clock.const 10
 scoreboard players set display.mod clock.const 24000
 
-scoreboard players set players.min clock.const 1
-
-
-bossbar remove clock
-
-bossbar add clock ["", {"text": ""}]
-bossbar set clock max 23999
-bossbar set clock value 0
-bossbar set clock visible true
+scoreboard players set isUp clock.const 1
