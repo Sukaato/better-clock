@@ -1,4 +1,4 @@
-bossbar set clock players @s
+bossbar set clock players @a[tag=clock.display.on]
 
 # Bossbar 
 execute store result bossbar clock value run scoreboard players get clock.bar clock.time

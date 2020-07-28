@@ -5,4 +5,4 @@ scoreboard players reset @s clock.on
 tag @s remove clock.display.off
 tag @s add clock.display.on
 
-bossbar set clock players @s
+bossbar set clock players @a[tag=clock.display.on]
