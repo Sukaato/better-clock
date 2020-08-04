@@ -7,14 +7,14 @@ bossbar set clock max 23999
 bossbar set clock value 0
 bossbar set clock visible true
 
-scoreboard objectives remove clock.off
-scoreboard objectives remove clock.on
 scoreboard objectives remove clock.const
+scoreboard objectives remove clock.config
+scoreboard objectives remove clock.toggle
 scoreboard objectives remove clock.time
 
-scoreboard objectives add clock.off trigger ["", {"text": "Clock: Display off trigger"}]
-scoreboard objectives add clock.on trigger ["", {"text": "Clock: Display on trigger"}]
 scoreboard objectives add clock.const dummy ["", {"text": "Clock: Constant"}]
+scoreboard objectives add clock.config dummy ["", {"text": "Clock: config"}]
+scoreboard objectives add clock.toggle trigger ["", {"text": "Clock: Toggle display trigger"}]
 scoreboard objectives add clock.time dummy ["", {"text": "Clock: Time"}]
 
 scoreboard players set hours.add clock.const 6000
@@ -28,4 +28,7 @@ scoreboard players set minutes.mod clock.const 60
 scoreboard players set display.bar clock.const 10
 scoreboard players set display.mod clock.const 24000
 
-scoreboard players set isUp clock.const 1
+tag @a remove clock.on
+tag @a remove clock.off
+
+scoreboard players set isUp clock.config 1
