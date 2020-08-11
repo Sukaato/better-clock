@@ -1,1 +1,1 @@
-execute if score isUp clock.config matches 1 run function clock:src/core/main
+execute if data storage config {clock: 1b} run function clock:src/core/main
