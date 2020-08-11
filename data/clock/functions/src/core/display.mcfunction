@@ -16,4 +16,5 @@ execute if score clock.bar clock.time matches 0..4499 run bossbar set clock colo
 execute if score clock.bar clock.time matches 4500..5199 run bossbar set clock color pink
 execute if score clock.bar clock.time matches 5200..6499 run bossbar set clock color yellow
 execute if score clock.bar clock.time matches 6500..17999 run bossbar set clock color blue
-execute if score clock.bar clock.time matches 18000..24000 run bossbar set clock color purple
+execute if score clock.bar clock.time matches 18000..18699 run bossbar set clock color yellow
+execute if score clock.bar clock.time matches 18700..24000 run bossbar set clock color purple

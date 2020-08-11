@@ -10,4 +10,6 @@ bossbar remove clock
 tag @a remove clock.on
 tag @a remove clock.off
 
+data remove storage config clock
+
 datapack disable "file/clock"
