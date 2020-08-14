@@ -1,4 +1,4 @@
-tellraw @a ["", {"text":"[ ","color":"dark_gray"}, {"text":"Uninstall","color":"red"}, {"text":" ] ","color":"dark_gray"}, {"text":"Clock v1.2.0"}]
+tellraw @a ["", {"text":"[ ","color":"dark_gray"}, {"text":"Uninstall","color":"red"}, {"text":" ] ","color":"dark_gray"}, {"text":"Clock v1.3.1"}]
 
 scoreboard objectives remove clock.const
 scoreboard objectives remove clock.config

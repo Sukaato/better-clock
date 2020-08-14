@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"[ ","color":"dark_gray"}, {"text":"Initialisation","color":"gold"}, {"text":" ] ","color":"dark_gray"}, {"text":"Clock v1.2.1"}]
+tellraw @a ["",{"text":"[ ","color":"dark_gray"}, {"text":"Initialisation","color":"gold"}, {"text":" ] ","color":"dark_gray"}, {"text":"Clock v1.3.1"}]
 
 bossbar add clock ["", {"text": ""}]
 bossbar set clock max 23999
