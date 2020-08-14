@@ -1,4 +1,4 @@
-bossbar set clock players @a[tag=clock.on]
+bossbar set clock players @a[tag=clock.on, nbt={Dimension: "minecraft:overworld"}]
 
 # Bossbar 
 execute store result bossbar clock value run scoreboard players get clock.bar clock.time
