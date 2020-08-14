@@ -1,1 +1,2 @@
-execute if data storage config {clock: 1b} run function clock:src/core/main
+execute if data storage config {clock: 1b} if data storage clock {mode: 0b} run function clock:src/mode/clock/main
+execute if data storage config {clock: 1b} if data storage clock {mode: 1b} run function clock:src/mode/trigger/main

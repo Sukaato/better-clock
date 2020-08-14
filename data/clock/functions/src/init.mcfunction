@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"[ ","color":"dark_gray"},{"text":"Initialisation","color":"gold"},{"text":" ] ","color":"dark_gray"},{"text":"Clock"}]
+tellraw @a ["",{"text":"[ ","color":"dark_gray"},{"text":"Initialisation","color":"gold"},{"text":" ] ","color":"dark_gray"},{"text":"Clock v1.2.0"}]
 
 bossbar add clock ["", {"text": ""}]
 bossbar set clock max 23999
@@ -19,4 +19,6 @@ scoreboard players set minutes.mod clock.const 60
 
 scoreboard players set display.mod clock.const 24000
 
+# 0 = clock in Inventory , 1 = displayed with trigger
+data modify storage clock mode set value 0b 
 data modify storage config clock set value 1b

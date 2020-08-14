@@ -1,0 +1,4 @@
+execute as @a[tag=clock.on] at @s unless entity @s[nbt= {Inventory: [{id: "minecraft:clock"}]}] unless entity @e[type=item_frame, nbt={ Item: {id: "minecraft:clock", Count: 1b}}, distance=..15] run function clock:src/mode/clock/tag
+execute as @a unless entity @s[nbt={Dimension: "minecraft:overworld"}] run function clock:src/mode/clock/tag
+execute as @a[nbt= {Inventory: [{id: "minecraft:clock"}], Dimension: "minecraft:overworld"}] run function clock:src/mode/clock/display
+execute as @a[nbt= {Dimension: "minecraft:overworld"}] at @s if entity @e[type=item_frame, nbt={ Item: {id: "minecraft:clock", Count: 1b}}, distance=..15] run function clock:src/mode/clock/display
